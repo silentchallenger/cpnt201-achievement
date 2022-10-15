@@ -1,0 +1,258 @@
+body {
+  /* Base Styles and Layout */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.5;
+
+  margin: 0;
+
+  background-color: #264653;
+
+  color: white;
+}
+
+a, a:visited {
+  /* Link colors */
+  text-decoration: none;
+  
+  color: black;
+}
+
+nav ul {
+  /* Navigation Styling */
+  margin-bottom: auto;
+}
+
+.top-bar {
+  /* Top Navigation Area */
+  text-align: center;
+
+  background-color: #e76f51;
+}
+
+.site-title {
+  /* Website Title Styling */
+  font-family: 'Reem Kufi Fun', 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+
+  margin: 0;
+  padding: 0.5em;
+}
+
+.main-nav ul {
+  /* Main Navigation Styling */
+  padding-left: 0;
+
+  margin: auto;
+
+  list-style: none;
+}
+
+.main-nav a {
+  /* Main Navigation Button Styling */
+  display: block;
+  padding: 1em;
+}
+
+.main-nav ul a:hover {
+  /* Main Navigation Button Hover State Styling */
+  background-color: #2a9d8f;
+  transition: all 200ms ease-out;
+}
+
+.main-nav ul li {
+  /* Main Navigation Button Background */
+  background-color: #e9c46a;
+}
+
+.banner-title {
+  /* Hero Section Styling */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  height: 65vh;
+
+  margin: 0;
+
+  background: url('../images/banner.jpg'),
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.banner-title h1 {
+  /* Hero Section Main Text Styling */
+  font-family: 'Reem Kufi Fun', Arial, Helvetica, cursive;
+  font-size: clamp(64px, 10vw, 108px);
+
+  color: #e9c46a;
+
+  margin-bottom: 0;
+  margin-top: 0.5em; 
+}
+
+.banner-title p {
+  /* Hero Section Secondary Text Styling */
+  font-size: clamp(20px, 3vw, 32px);
+
+  max-width: 30ch;
+  margin: 3em auto;
+  
+  color: white;
+}
+
+.card {
+  /* Button Container */
+  max-width: 30ch;
+  margin: 2em auto;
+
+  background-color: white;
+
+  font-family: 'Reem Kufi', 'Trebuchet MS', cursive;
+}
+
+
+.card a {
+  /* Button Content Style */
+  display: block;
+
+  font-size: clamp(18px, 2vw, 22px);
+
+  padding: 0.5em;
+  margin: auto;
+
+  text-align: center;
+  text-decoration: none;
+
+  box-shadow: 0px 0px 12px 3px #4FA39F;
+}
+
+.card:hover {
+  /* Button Hover State */
+  background-color: #2a9d8f;
+  transition: all 200ms ease-out;
+}
+
+main {
+  /* Content Area */
+  max-width: 40ch;
+
+  flex: auto;
+
+  margin: 1em auto;
+
+}
+
+footer {
+  /* Footer Area */
+  background-color: #e76f51;
+}
+
+footer p {
+  /* Copyright Text Styling */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 0.5em;
+
+  color: black;
+}
+
+.footer-area {
+  /* Main Bottom Flexbox */
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.bottom-socials {
+  /* Bottom Logo and Socials Flexbox */
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-logo-title {
+  /* Bottom Website Title Styling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-logo-title p {
+  margin-bottom: 0;
+}
+
+.fa {
+  /* Social Button Links */
+  width: 25px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.secondary-nav a {
+  /* Bottom Navigation Button Styling */
+  display: block;
+  padding: 0.5em;
+}
+
+.secondary-nav ul {
+  /* Secondary Navigation Styling */
+  list-style: none;
+  padding-left: 0px;
+}
+
+.map {
+  /* Google Maps */
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 45em) {
+  .top-bar {
+    /* Top Navigation Area */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    /* Website Title Styling */
+    padding: 0 1em;
+  }
+
+  .banner-title p {
+    /* Hero Section Secondary Text Styling */
+    margin: auto;
+  }
+
+  .main-nav ul {
+    /* Main Navigation Styling */
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-area {
+    /* Main Bottom Flexbox */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: auto;
+
+    max-width: 800px;
+  }
+
+  .bottom-logo-title p {
+    margin: auto;
+  }
+}
