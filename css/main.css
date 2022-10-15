@@ -90,7 +90,7 @@ nav ul {
 .banner-title h1 {
   /* Hero Section Main Text Styling */
   font-family: 'Reem Kufi Fun', Arial, Helvetica, cursive;
-  font-size: clamp(64px, 10vw, 108px);
+  font-size: clamp(56px, 10vw, 92px);
 
   color: #e9c46a;
 
